@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GLI OCEANI</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background-color: #001f33;
+        }
+
+        header.hero {
+            background-color: #005f73;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        header.hero h1 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        header.hero h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            margin: 0;
+            color: #d9d9d9;
+        }
+
+        section.zone,
+        section.pesca-strascico,
+        section.pesca-frodo,
+        section.pesca-barriera,
+        section.acquacoltura,
+        section.inquinamento-vita {
+            padding: 2rem;
+            border-bottom: 2px solid #ffffff22;
+        }
+
+        /* Colori di background per le sezioni oceaniche */
+        section.zona-epipelagica {
+            background-color: #a0d8ef; /* azzurro chiaro */
+            color: black;
+        }
+        section.zona-mesopelagica {
+            background-color: #003366; /* blu scuro */
+            color: white;
+        }
+        section.zona-batipelagica {
+            background-color: #001f33;
+            color: white;
+        }
+        section.zona-abissopelagica {
+            background-color: #000f1a;
+            color: white;
+        }
+        section.zona-hadopelagica {
+            background-color: #000000;
+            color: white;
+        }
+
+        /* Nuove sezioni con sfondo blu scuro come la zona mesopelagica */
+        section.pesca-frodo,
+        section.pesca-barriera,
+        section.acquacoltura,
+        section.inquinamento-vita {
+            background-color: #003366; /* blu scuro */
+            color: white;
+        }
+
+        /* Pesca a strascico rimane verde scuro per differenziarla */
+        section.pesca-strascico {
+            background-color: #004d40;
+            color: white;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .text {
+            flex: 1 1 55%;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            flex: 1 1 40%;
+            max-width: 400px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            border-radius: 8px;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        p {
+            line-height: 1.6;
+            font-size: 1rem;
+            margin: 0.5rem 0;
+        }
+
+        h3 {
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+
+        strong {
+            color: #ffd166;
+        }
+    </style>
+</head>
+<body>
+    <header class="hero">
+        <h1>GLI OCEANI</h1>
+        <h2>Mancin, Beggiato, Laronzana e Rampado</h2>
+    </header>
+
+    <!-- Sezioni pesca e acquacoltura (prima delle zone oceaniche) -->
+    <section class="pesca-strascico">
+        <div class="content">
+            <div class="text">
+                <h3>Pesca a strascico</h3>
+                <p>La pesca a strascico consiste nel trainare una rete molto grande lungo il fondale marino, catturando un gran numero di specie diverse, sia intenzionali che non.</p>
+                <p>Questo metodo è molto impattante sull'ambiente marino perché distrugge habitat delicati e cattura anche molte specie non desiderate, causando uno spreco significativo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pesca-frodo">
+        <div class="content">
+            <div class="text">
+                <h3>Pesca di frodo</h3>
+                <p>La pesca di frodo è una pratica illegale che danneggia gravemente gli ecosistemi marini, poiché spesso non rispetta i limiti di cattura e usa tecniche non sostenibili.</p>
+                <p>Questa attività mette a rischio la biodiversità marina e rende difficile la gestione sostenibile delle risorse ittiche.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="pesca-barriera">
+        <div class="content">
+            <div class="text">
+                <h3>Pesca con reti a barriera</h3>
+                <p>La pesca con reti a barriera utilizza barriere fisse o semimobili che intrappolano i pesci mentre si spostano.</p>
+                <p>Questa tecnica è meno impattante rispetto alla pesca a strascico, ma può comunque causare danni se non gestita correttamente, ad esempio bloccando il passaggio delle specie migratorie.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="acquacoltura">
+        <div class="content">
+            <div class="text">
+                <h3>Benefici dell'acquacoltura</h3>
+                <p>L'acquacoltura, ovvero l'allevamento controllato di specie marine, rappresenta un'alternativa sostenibile alla pesca intensiva.</p>
+                <p>Essa permette di ridurre la pressione sulle popolazioni selvatiche, limitare i danni agli habitat naturali e garantire una produzione continua e regolata di pesce e crostacei.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="inquinamento-vita">
+        <div class="content">
+            <div class="text">
+                <h3>Inquinamento e pericoli per la vita oceanica</h3>
+                <p>L'inquinamento marino rappresenta una minaccia grave per le forme di vita negli oceani e per la salute dell'intero ecosistema oceanico.</p>
+                <p>Plastica, sostanze chimiche tossiche, scarichi e rumore eccessivo mettono in pericolo pesci, coralli, mammiferi marini e altre specie, compromettendo la biodiversità e la capacità degli oceani di rigenerarsi.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sezioni delle zone oceaniche -->
+    <section class="zone zona-epipelagica">
+        <div class="content">
+            <div class="text">
+                <h3>Epipelagica (0–200 m)</h3>
+                <p><strong>0–200 metri:</strong> Questa è la zona più vicina alla superficie, dove la luce solare penetra abbondantemente, permettendo la fotosintesi. È l'area più produttiva dell'oceano e ospita la maggior parte della vita marina.</p>
+                <p><strong>Inquinamento principale:</strong> plastica galleggiante, sversamenti di petrolio, scarichi urbani e industriali, pesticidi e fertilizzanti agricoli.</p>
+                <p><strong>Effetti:</strong> danneggiamento degli habitat costieri, morte di organismi marini per ingestione o intrappolamento, eutrofizzazione delle acque.</p>
+            </div>
+            <div class="image-container">
+                <img src="0-200m _1.jpeg" alt="Alga Kelp" />
+                <img src="0-200m _2.jpeg" alt="Nudibranco colorato" />
+                <img src="0-200m _3.jpeg" alt="Prateria di Posidonia" />
+                <img src="0-200m _4.jpeg" alt="Pesce Pappagallo" />
+            </div>
+        </div>
+    </section>
+
+    <section class="zone zona-mesopelagica">
+        <div class="content">
+            <div class="text">
+                <h3>Mesopelagica (200–1.000 m)</h3>
+                <p><strong>200–1.000 metri:</strong> Qui la luce solare diminuisce rapidamente, rendendo l'ambiente adatto solo a specie adattate a condizioni di scarsa luminosità.</p>
+                <p><strong>Inquinamento principale:</strong> microplastiche trasportate dalle correnti, sostanze chimiche persistenti, inquinamento acustico.</p>
+                <p><strong>Effetti:</strong> accumulo di tossine negli organismi, alterazioni comportamentali nei cetacei, perturbazioni nella catena alimentare.</p>
+            </div>
+            <div class="image-container">
+                <img src="200-1000m _1.jpeg" alt="Corallo" />
+                <img src="200-1000m _2.jpeg" alt="Oloturia" />
+                <img src="200-1000m _3.jpeg" alt="Granchio Yeti" />
+                <img src="200-1000m _4.jpeg" alt="Spugna di vetro" />
+            </div>
+        </div>
+    </section>
+
+    <section class="zone zona-batipelagica">
+        <div class="content">
+            <div class="text">
+                <h3>Batipelagica (1.000–4.000 m)</h3>
+                <p><strong>1.000–4.000 metri: Zona Batipelagica (zona della mezzanotte)</strong></p>
+                <p>In questa fascia regna l'oscurità totale, con temperature basse e pressioni elevate.</p>
+                <p><strong>Inquinamento principale:</strong> microplastiche sedimentate, sostanze tossiche persistenti, rifiuti solidi affondati.</p>
+                <p><strong>Effetti:</strong> contaminazione degli organismi abissali, distruzione di habitat bentonici, riduzione della biodiversità.</p>
+            </div>
+            <div class="image-container">
+                <img src="1000-4000m _1.jpeg" alt="Calamaro abissale" />
+                <img src="1000-4000m _2.jpeg" alt="Isopode gigante" />
+                <img src="1000-4000m _3.jpeg" alt="Polpo Dumbo" />
+                <img src="1000-4000m _4.jpeg" alt="Isopode gigante" />
+            </div>
+        </div>
+    </section>
+
+    <section class="zone zona-abissopelagica">
+        <div class="content">
+            <div class="text">
+                <h3>Abissopelagica (4.000–6.000 m)</h3>
+                <p><strong>4.000–6.000 metri: Zona Abissopelagica</strong></p>
+                <p>Questa zona è caratterizzata da condizioni estreme: freddo intenso, oscurità e pressioni schiaccianti.</p>
+                <p><strong>Inquinamento principale:</strong> rifiuti artificiali come plastica e metalli, contaminanti organici persistenti.</p>
+                <p><strong>Effetti:</strong> bioaccumulo di sostanze tossiche in specie rare, alterazione di ecosistemi vulnerabili, rischio di contaminazione irreversibile.</p>
+            </div>
+            <div class="image-container">
+                <img src="4000-6000m _1.jpeg" alt="Polpo abissale" />
+                <img src="4000-6000m _2.jpeg" alt="Squalo anguilla" />
+                <img src="4000-6000m _3.jpeg" alt="Tripod fish" />
+                <img src="4000-6000m _4.jpeg" alt="Pesce rana abissale" />
+            </div>
+        </div>
+    </section>
+
+    <section class="zone zona-hadopelagica">
+        <div class="content">
+            <div class="text">
+                <h3>Hadopelagica (oltre 6.000 m)</h3>
+                <p><strong>Oltre 6.000 metri: Zona Hadopelagica (fossati oceanici)</strong></p>
+                <p>Questa è la zona più profonda dell'oceano, caratterizzata da oscurità completa, temperature vicine allo zero e pressioni estreme.</p>
+                <p><strong>Inquinamento principale:</strong> sostanze tossiche accumulate, microplastiche persistenti.</p>
+                <p><strong>Effetti:</strong> compromissione degli habitat più remoti e fragili della Terra.</p>
+            </div>
+            <div class="image-container">
+                <img src="6000+_1.jpeg" alt="Fossato oceanico" />
+                <img src="6000+_2.jpeg" alt="Creatura abissale" />
+                <img src="6000+_3.jpeg" alt="Ambiente Hadopelagico" />
+                <img src="6000+_4.jpeg" alt="Specie adattate" />
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
